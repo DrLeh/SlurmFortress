@@ -1,0 +1,53 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="log4net.config" />
+    <None Remove="plugin.config.json" />
+    <None Remove="plugin.uat.config.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="log4net.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="plugin.uat.config.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="plugin.config.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ASI.Contracts.SlurmFortress.Messages\ASI.Contracts.SlurmFortress.Messages.csproj" />
+    <ProjectReference Include="..\SlurmFortress.Algolia\SlurmFortress.Algolia.csproj" />
+    <ProjectReference Include="..\SlurmFortress.Core\SlurmFortress.Core.csproj" />
+    <ProjectReference Include="..\SlurmFortress.Data\SlurmFortress.Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ASI.Barista.Plugins.Ipc" Version="6.6.0" />
+    <PackageReference Include="ASI.Barista.Plugins.Messaging" Version="6.6.3" />
+    <PackageReference Include="ASI.Services.Monitoring" Version="6.1.39" />
+    <PackageReference Include="ASI.Services.Security" Version="6.1.39" />
+    <PackageReference Include="ASI.Services.Statistics" Version="6.1.39" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="OctoPack" Version="3.6.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+</Project>

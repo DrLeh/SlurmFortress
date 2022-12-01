@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<LangVersion>10</LangVersion>
+		<ImplicitUsings>true</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="ASI.Services.Algolia" Version="6.0.3" />
+		<PackageReference Include="ASI.Services.Algolia.Indexing" Version="6.0.3" />
+		<PackageReference Include="ASI.Services.Algolia.Indexing.Automapper" Version="6.0.3" />
+		<PackageReference Include="ASI.Services.Algolia.Security" Version="6.0.3" />
+
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\SlurmFortress.Core\SlurmFortress.Core.csproj" />
+	</ItemGroup>
+
+</Project>

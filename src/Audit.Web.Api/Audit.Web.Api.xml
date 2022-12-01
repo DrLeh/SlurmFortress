@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Audit.Web.Api</name>
+    </assembly>
+    <members>
+        <member name="T:Audit.Web.Api.Controllers.ActivitiesController">
+            <summary>
+            Tracks application-specific activities that occurs
+            </summary>
+        </member>
+        <member name="M:Audit.Web.Api.Controllers.ActivitiesController.AddActivity(ASI.Contracts.Audit.ActivityView)">
+            <summary>
+            Adds a new activity record
+            </summary>
+        </member>
+        <member name="M:Audit.Web.Api.Controllers.ActivitiesController.GetActivity(System.Int64)">
+            <summary>
+            Returns activity details by ID
+            </summary>
+        </member>
+        <member name="M:Audit.Web.Api.Controllers.EventsController.GetAsOfDate(System.String,System.String,System.DateTime)">
+            <summary>
+            Gets the state of an entity on the given date
+            </summary>
+            <param name="type"></param>
+            <param name="entityId"></param>
+            <param name="effDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Audit.Web.Api.Controllers.EventsController.GetAsOfDate(System.String,System.String,System.DateTime,System.DateTime)">
+            <summary>
+            Gets the state of an entity on the two given dates in order to generate a JSON comparison
+            </summary>
+            <param name="type"></param>
+            <param name="id"></param>
+            <param name="effDate1"></param>
+            <param name="effDate2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Audit.Web.Api.Infrastructure.SwaggerExtensions.RegisterSwagger(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Register's swagger using ASI's standards
+            </summary>
+        </member>
+        <member name="M:Audit.Web.Api.DependencyInjection.AddWebApi(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Audit registrations. This is where to register all objects needed by your code
+            </summary>
+        </member>
+        <member name="M:Audit.Web.Api.DependencyInjection.RegisterUser(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Register all things pertaining to the current user
+            </summary>
+        </member>
+        <member name="T:Audit.Web.Controllers.ApplicationsController">
+            <summary>
+            Controller methods related to applications
+            </summary>
+        </member>
+        <member name="M:Audit.Web.Controllers.ApplicationsController.#ctor(Audit.Core.Applications.IApplicationService,AutoMapper.IMapper)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Audit.Web.Controllers.ApplicationsController.GetApplication(System.String)">
+            <summary>
+            Gets an application by key
+            </summary>
+        </member>
+        <member name="M:Audit.Web.Controllers.ApplicationsController.Search(ASI.Contracts.Audit.ApplicationSearchRequestView)">
+            <summary>
+            Gets an applications based on paging
+            </summary>
+        </member>
+        <member name="M:Audit.Web.Controllers.ApplicationsController.PostApplication(System.String,System.String)">
+            <summary>
+            Creates a new application. Expects the configured ApplicationCreationSecret
+            </summary>
+        </member>
+        <member name="T:Audit.Web.Security.WebApplicationContext">
+            <summary>
+            Example of how you could store a tenant id. This allows you to inject the current tenant
+            throughout the application. Security policy expects this in order to filter out
+            every object from being accessed across-tenant.
+            </summary>
+        </member>
+        <member name="M:WebApiTemplate.Core.Infrastructure.AsiWebApiExtensions.AddAsiWebApiStandards(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Standards for all ASI Web applications
+            </summary>
+        </member>
+        <member name="M:WebApiTemplate.Core.Infrastructure.AsiWebApiExtensions.AddAsiAuth(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Standards for using ASI's Authentication strategies
+            </summary>
+        </member>
+        <member name="T:WebApiTemplate.Core.Infrastructure.LoggingExtensions">
+            <summary>
+            Register's logging using ASI's standards
+            </summary>
+        </member>
+        <member name="M:WebApiTemplate.Core.Infrastructure.MicrosoftWebApiExtensions.AddMsApi(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Microsoft-specific registrations
+            </summary>
+        </member>
+    </members>
+</doc>

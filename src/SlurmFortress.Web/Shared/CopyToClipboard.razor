@@ -1,0 +1,25 @@
+﻿@inject IJSRuntime JSRuntime
+
+<Button Clicked="CopyTextToClipboard" Color="Color.Primary">
+    @*<Icon Name="IconName.Grin"></Icon>*@
+    Copy
+</Button>
+<Snackbar @ref="snackbar" Color="SnackbarColor.Success">
+    <SnackbarBody>
+        Text Copied!
+    </SnackbarBody>
+</Snackbar>
+
+@code {
+    [Parameter] public string Text { get; set; } = default!;
+    private Snackbar snackbar;
+
+    private async Task CopyTextToClipboard()
+    {
+        var ret = await JSRuntime.InvokeAsync<bool>("clipboardCopy.copyText", Text);
+        if (ret)
+        {
+            await snackbar.Show();
+        }
+    }
+}

@@ -1,0 +1,27 @@
+@page "/"
+@inject IConfiguration config
+
+
+<PageTitle>ASI SlurmFortress</PageTitle>
+
+<div class="row">
+    <div class="col-md-12">
+        <h1>
+            <img src="./images/SlurmFortress.png" height="32" width="32" />
+            ASI SlurmFortress - @config["EnvironmentName"]
+        </h1>
+
+        <ul>
+            <li>
+                <a href="swagger">Swagger</a>
+            </li>
+            <li>
+                <a href="swagger/v1/swagger.json">Swagger.json</a>
+            </li>
+            <li>
+                <a href="https://github.com/asi/SlurmFortress/">Github</a>
+            </li>
+        </ul>
+
+    </div>
+</div>

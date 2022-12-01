@@ -1,0 +1,28 @@
+
+<Bar Breakpoint="Breakpoint.Desktop" Class="navbar-themed">
+    <BarBrand>
+        <img src="./images/SlurmFortress.png" height="32" width="32" />
+        SlurmFortress
+    </BarBrand>
+    <BarToggler />
+    <BarMenu>
+        <BarStart>
+            <BarItem>
+                <BarLink To="./">Home</BarLink>
+            </BarItem>
+            <BarItem>
+                <BarLink To="./swagger">Swagger</BarLink>
+            </BarItem>
+            
+            <BarItem>
+                <BarLink To="apicall">Api Call</BarLink>
+            </BarItem>
+            
+        </BarStart>
+        <BarEnd>
+            <BarItem>
+                <Button Color="Color.Secondary" onclick="toggleTheme()">Toggle Theme</Button>
+            </BarItem>
+        </BarEnd>
+    </BarMenu>
+</Bar>

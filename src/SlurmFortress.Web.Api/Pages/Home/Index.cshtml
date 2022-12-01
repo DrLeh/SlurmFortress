@@ -1,0 +1,36 @@
+@page
+@using SlurmFortress.Core.Configuration
+@inject IConfiguration appConfig;
+@{
+
+}
+@model SlurmFortress.Web.Api.Pages.Home.IndexModel
+@{
+    ViewData["Title"] = "ASI SlurmFortress";
+}
+
+
+<div class="row">
+    <div class="col-md-12">
+        <h1>ASI SlurmFortress - @appConfig.EnvironmentName</h1>
+
+        <ul>
+            <li>
+                <a href="swagger">Swagger</a>
+            </li>
+            <li>
+                <a href="swagger/v1/swagger.json">Swagger.json</a>
+            </li>
+            <li>
+                <a href="https://github.com/asi/ApplicationTemplate/">Github</a>
+            </li>
+            <li>
+                <a href="https://app.codacy.com/gh/asi/ApplicationTemplate/dashboard">
+                    Codacy
+                    @*<img src="https://app.codacy.com/project/badge/Grade/b2872b4f2530414ea5e636c56a2ad146" />*@
+                </a>
+            </li>
+        </ul>
+
+    </div>
+</div>

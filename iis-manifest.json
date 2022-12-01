@@ -1,0 +1,39 @@
+{
+  "AppPools": [
+    {
+      "Name": "myapp.asicentral.com",
+      "Settings": {
+        "AutoStart": false,
+        "Enable32BitAppOnWin64": false,
+        "ManagedPipelineMode": 0,
+        "ManagedRuntimeVersion": "v4.0",
+        "ProcessModel": {
+          "IdentityType": "SpecificUser",
+          "UserName": "IIS_WP_LocalDev"
+        }
+      }
+    }
+  ],
+  "Websites": [
+    {
+      "Name": "myapp.asicentral.com",
+      "PhysicalPath": "src/MyApp.Web.Api",
+      "ApplicationPool": "myapp.asicentral.com",
+      "Bindings": [
+        {
+          "HostHeader": "myapp.local-asicentral.com",
+          "IPAddress": "127.0.0.1",
+          "Port": "443",
+          "Protocol": "https",
+          "SslFlags": 3
+        },
+        {
+          "HostHeader": "myapp.local-asicentral.com",
+          "IPAddress": "127.0.0.1",
+          "Port": "80",
+          "Protocol": "http"
+        }
+      ]
+    }
+  ]
+}

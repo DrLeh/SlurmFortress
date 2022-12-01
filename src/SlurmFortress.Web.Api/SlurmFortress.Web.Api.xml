@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SlurmFortress.Web.Api</name>
+    </assembly>
+    <members>
+        <member name="T:SlurmFortress.Web.Api.Infrastructure.LoggingExtensions">
+            <summary>
+            Register's logging using ASI's standards
+            </summary>
+        </member>
+        <member name="M:SlurmFortress.Web.Api.Infrastructure.LoggingExtensions.ConfigureLogging(Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Logging.ILoggerFactory)">
+            <summary>
+            Configure Logging
+            </summary>
+        </member>
+        <member name="M:SlurmFortress.Web.Api.Infrastructure.MicrosoftWebApiExtensions.AddMsApi(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Microsoft-specific registrations
+            </summary>
+        </member>
+        <member name="T:SlurmFortress.Web.Api.Infrastructure.SwaggerExtensions">
+            <summary>
+            Swagger setup methods
+            </summary>
+        </member>
+        <member name="M:SlurmFortress.Web.Api.Infrastructure.SwaggerExtensions.ConfigureSwagger(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Configure the Swagger endpoints for this app
+            </summary>
+        </member>
+        <member name="M:SlurmFortress.Web.Api.Infrastructure.SwaggerExtensions.AddSwagger(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Register's swagger using ASI's standards
+            </summary>
+        </member>
+        <member name="M:SlurmFortress.Web.Api.AsiWebApiExtensions.AddAsiWebApiStandards(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)">
+            <summary>
+            Standards for all ASI Web applications
+            </summary>
+        </member>
+        <member name="M:SlurmFortress.Web.Api.DependencyInjection.AddWebApi(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            SlurmFortress registrations. This is where to register all objects needed by your code
+            </summary>
+        </member>
+        <member name="M:SlurmFortress.Web.Api.DependencyInjection.RegisterUser(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Register all things pertaining to the current user
+            </summary>
+        </member>
+    </members>
+</doc>
