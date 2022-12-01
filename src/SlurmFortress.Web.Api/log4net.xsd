@@ -718,7 +718,7 @@ Legal:
       <xs:enumeration value="log4net.Appender.TextWriterAppender" />
       <xs:enumeration value="log4net.Appender.TraceAppender" />
       <xs:enumeration value="log4net.Appender.UdpAppender" />
-      <xs:enumeration value="ASI.Services.Logging.EsbLogAppender, ASI.Services.Logging" />
+      <xs:enumeration value="DLeh.Services.Logging.EsbLogAppender, DLeh.Services.Logging" />
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="log4netUpdateAttribute">

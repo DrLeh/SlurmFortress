@@ -4,7 +4,7 @@ using SlurmFortress.Web.Api.Test.Factories;
 namespace SlurmFortress.Web.Api.Test.Tests.Client;
 
 /// <summary>
-/// The same tests can be ran using the client app via ASI.Services.SlurmFortress
+/// The same tests can be ran using the client app via DLeh.Services.SlurmFortress
 /// </summary>
 public class SlurmIntegrationTest : IntegrationTestBase
 {

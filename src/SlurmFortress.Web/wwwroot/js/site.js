@@ -7,6 +7,8 @@ let light = 'bootstrap';
 let dark = 'bootstrap-dark';
 let theme = dark;
 function toggleTheme() {
+  setTheme(light);
+  setTheme(dark);
   if (theme == light)
     setTheme(dark);
   else
@@ -26,3 +28,21 @@ function loadTheme() {
     setTheme(storedTheme);
 }
 loadTheme();
+
+// the main gameloop. Will be called 60 times per second by requestAnimationFrame
+function gameLoop(timeStamp) {
+  window.requestAnimationFrame(gameLoop);
+  game.instance.invokeMethodAsync('GameLoop', timeStamp);//, game.canvases[0].width, game.canvases[0].height);
+}
+
+// will be called by blazor to initialize the game and register the game instance.
+window.initGame = (instance) => {
+  var canvasContainer = document.getElementById('canvasContainer');
+  var canvases = canvasContainer.getElementsByTagName('canvas') || [];
+
+  window.game = {
+    instance: instance,
+    canvases: canvases
+  };
+  window.requestAnimationFrame(gameLoop);
+};

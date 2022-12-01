@@ -1,8 +1,8 @@
 //using System.Net;
 //using System.Reflection;
-//using ASI.Console;
-//using ASI.Console.Commands;
-//using ASI.Services.DependencyInjection;
+//using DLeh.Console;
+//using DLeh.Console.Commands;
+//using DLeh.Services.DependencyInjection;
 //using Microsoft.Extensions.DependencyInjection;
 //using Microsoft.Extensions.Hosting;
 //using Microsoft.Extensions.Logging;

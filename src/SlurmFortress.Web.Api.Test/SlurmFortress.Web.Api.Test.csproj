@@ -26,8 +26,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\ASI.Contracts.SlurmFortress\ASI.Contracts.SlurmFortress.csproj" />
-		<ProjectReference Include="..\ASI.Services.SlurmFortress\ASI.Services.SlurmFortress.csproj" />
+		<ProjectReference Include="..\DLeh.Contracts.SlurmFortress\DLeh.Contracts.SlurmFortress.csproj" />
+		<ProjectReference Include="..\DLeh.Services.SlurmFortress\DLeh.Services.SlurmFortress.csproj" />
 		<ProjectReference Include="..\SlurmFortress.Web.Api\SlurmFortress.Web.Api.csproj" />
 	</ItemGroup>
 

@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+﻿<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Blazor.Extensions.Canvas" Version="1.1.1" />
     <PackageReference Include="Blazorise.Bootstrap" Version="1.0.6" />
     <PackageReference Include="Blazorise.Components" Version="1.0.6" />    
     <PackageReference Include="Blazorise.Icons.FontAwesome" Version="1.0.6" />
@@ -20,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ASI.Services.SlurmFortress\ASI.Services.SlurmFortress.csproj" />
+    <ProjectReference Include="..\DLeh.Services.SlurmFortress\DLeh.Services.SlurmFortress.csproj" />
     <ProjectReference Include="..\SlurmFortress.Core\SlurmFortress.Core.csproj" />
     <ProjectReference Include="..\SlurmFortress.Data\SlurmFortress.Data.csproj" />
   </ItemGroup>

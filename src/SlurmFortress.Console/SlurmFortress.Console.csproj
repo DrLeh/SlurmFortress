@@ -26,7 +26,7 @@
 		</Content>
 	</ItemGroup>
 	<ItemGroup>
-		<ProjectReference Include="..\ASI.Contracts.SlurmFortress\ASI.Contracts.SlurmFortress.csproj" />
+		<ProjectReference Include="..\DLeh.Contracts.SlurmFortress\DLeh.Contracts.SlurmFortress.csproj" />
 		<ProjectReference Include="..\SlurmFortress.Core\SlurmFortress.Core.csproj" />
 		<ProjectReference Include="..\SlurmFortress.Data\SlurmFortress.Data.csproj" />
 	</ItemGroup>

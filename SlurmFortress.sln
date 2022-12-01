@@ -12,14 +12,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{4BE86AE1-C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SlurmFortress.Core.Test", "src\SlurmFortress.Core.Test\SlurmFortress.Core.Test.csproj", "{7A6C6EEB-185E-481E-B97D-CD2528ABCD3E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASI.Contracts.SlurmFortress", "src\ASI.Contracts.SlurmFortress\ASI.Contracts.SlurmFortress.csproj", "{5BF0525B-9782-40A3-A840-36BF2F4CB8C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dleh.Contracts.SlurmFortress", "src\DLeh.Contracts.SlurmFortress\Dleh.Contracts.SlurmFortress.csproj", "{5BF0525B-9782-40A3-A840-36BF2F4CB8C8}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SlurmFortress.Web.Api.Test", "src\SlurmFortress.Web.Api.Test\SlurmFortress.Web.Api.Test.csproj", "{689F2107-E5E3-475B-B882-7596F54735DC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{19DC78B0-374B-4E47-8FC9-35C040E1BF57}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
-		Jenkinsfile = Jenkinsfile
 		README.md = README.md
 		SlurmFortress.sln.startup.json = SlurmFortress.sln.startup.json
 	EndProjectSection
@@ -28,7 +27,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Contracts", "Contracts", "{
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SlurmFortress.Console", "src\SlurmFortress.Console\SlurmFortress.Console.csproj", "{786B7B88-85F7-4ECA-9698-E8D54EAF28F4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASI.Services.SlurmFortress", "src\ASI.Services.SlurmFortress\ASI.Services.SlurmFortress.csproj", "{7B73F121-CCEB-44A7-8EB6-FEEBBED7E496}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DLeh.Services.SlurmFortress", "src\DLeh.Services.SlurmFortress\DLeh.Services.SlurmFortress.csproj", "{7B73F121-CCEB-44A7-8EB6-FEEBBED7E496}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SlurmFortress.Web", "src\SlurmFortress.Web\SlurmFortress.Web.csproj", "{FDA0F7E0-B5C1-43C1-9F56-E66B2F23572E}"
 EndProject

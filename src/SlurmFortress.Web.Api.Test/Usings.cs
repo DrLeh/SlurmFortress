@@ -2,6 +2,6 @@
 global using FluentAssertions;
 global using Moq;
 global using Xunit;
-global using ASI.Contracts.SlurmFortress;
-global using ASI.Services.SlurmFortress;
+global using DLeh.Contracts.SlurmFortress;
+global using DLeh.Services.SlurmFortress;
 

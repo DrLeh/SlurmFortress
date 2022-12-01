@@ -1,4 +1,4 @@
-using ASI.Contracts.SlurmFortress;
+using DLeh.Contracts.SlurmFortress;
 using SlurmFortress.Core.Models;
 
 namespace SlurmFortress.Core.Test.Mapping;

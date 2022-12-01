@@ -1,4 +1,4 @@
-using ASI.Contracts.SlurmFortress;
+using DLeh.Contracts.SlurmFortress;
 using AutoMapper;
 using SlurmFortress.Core.Models;
 

@@ -5,7 +5,7 @@ public abstract class Entity : IEntity
     /// <summary>
     /// Primary Key
     /// </summary>
-    public Guid Id { get; set; }
+    public Guid Id { get; set; } = Guid.NewGuid();
     /// <summary>
     /// Denotes that the entity is soft-deleted
     /// </summary>

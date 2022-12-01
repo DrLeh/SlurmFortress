@@ -1,0 +1,42 @@
+@using Blazor.Extensions.Canvas;
+@using Blazor.Extensions.Canvas.Canvas2D;
+@using Blazor.Extensions;
+@inject IConfiguration config
+@inject IJSRuntime JsRuntime
+@inject GameTimer GameTimer
+@inject GameState State
+
+Current Time: @GameTimer.CurrentTime
+
+Current Ticks: @GameTimer.CurrentTicks
+
+<div id="canvasContainer">
+    <BECanvas @ref="_canvasReference"></BECanvas>
+</div>
+
+@code {
+
+    protected BECanvasComponent _canvasReference;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (!firstRender)
+            return;
+        await JsRuntime.InvokeAsync<object>("initGame", DotNetObjectReference.Create(this));
+        //await InitCanvas(firstRender);
+    }
+
+    public float LatestTime => GameTimer.CurrentTime;
+
+    [JSInvokable]
+    public async ValueTask GameLoop(float timeStamp)
+    {
+        // update & render
+        var tickHasChanged = GameTimer.SetTime(timeStamp);
+        if (tickHasChanged)
+        {
+            StateHasChanged();
+        }
+        await ValueTask.CompletedTask;
+    }
+}
