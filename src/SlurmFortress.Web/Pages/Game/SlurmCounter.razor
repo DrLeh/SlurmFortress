@@ -3,9 +3,9 @@
 @using Blazor.Extensions;
 @inject IConfiguration config
 @inject IJSRuntime JsRuntime
-@inject ILogger<SlurmCounter> Logger
 @inherits GameComponent
 
 
-Total Slurms: @State.AllSlurms.Count()
+Total Ticks: @TickState.Value.Ticks
 
+Total Slurms: @GameState.Value.AllSlurms.Count 

@@ -1,10 +1,12 @@
+@using Blazor.Extensions;
 @using Blazor.Extensions.Canvas;
 @using Blazor.Extensions.Canvas.Canvas2D;
 @using Blazor.Extensions;
+@using SlurmFortress.Web.Game.State;
+
 @inject IConfiguration config
 @inject IJSRuntime JsRuntime
 @inject GameTimer GameTimer
-@inject GameState State
 
 Current Time: @GameTimer.CurrentTime
 
@@ -15,8 +17,7 @@ Current Ticks: @GameTimer.CurrentTicks
 </div>
 
 @code {
-
-    protected BECanvasComponent _canvasReference;
+    protected BECanvasComponent _canvasReference = default!;
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {

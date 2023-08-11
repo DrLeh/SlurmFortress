@@ -1,0 +1,19 @@
+@using Blazor.Extensions.Canvas;
+@using Blazor.Extensions.Canvas.Canvas2D;
+@using Blazor.Extensions;
+@inject IConfiguration config
+@inject IJSRuntime JsRuntime
+@inject ILogger<SlurmCounter> Logger
+@inherits GameComponent
+
+
+<Button Clicked="DoBreed" Type="ButtonType.Button" Color="Color.Primary">
+    Breed another Slurm
+</Button>
+
+@code {
+    public void DoBreed()
+    {
+        Dispatcher.Dispatch(new BreedAction());
+    }
+}

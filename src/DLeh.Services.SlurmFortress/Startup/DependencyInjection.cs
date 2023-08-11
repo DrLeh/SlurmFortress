@@ -20,7 +20,7 @@ public static class DependencyInjection
     /// <summary>
     /// Add ability to connect to SlurmFortress via injecting an <see cref="ISlurmsClient"/>.
     /// </summary>
-    public static void AddSlurmFortress(this IServiceCollection services) => services.AddSlurmFortress<NullHandler>();
+    public static void AddSlurmFortressApi(this IServiceCollection services) => services.AddSlurmFortress<NullHandler>();
 
     /// <summary>
     /// Add ability to connect to Vesta via injecting an <see cref="ISlurmsClient"/>.

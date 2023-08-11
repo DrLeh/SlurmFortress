@@ -1,4 +1,4 @@
-﻿namespace SlurmFortress.Web.Game;
+﻿namespace SlurmFortress.Web.Game.Time;
 
 public class TimerEventArgs : EventArgs
 {
@@ -26,9 +26,7 @@ public class GameTimer
         get
         {
             lock (locker)
-            {
                 return _currentTime;
-            }
         }
     }
     private static int TickRate = 1000;
@@ -38,20 +36,16 @@ public class GameTimer
         get
         {
             lock (locker)
-            {
                 return (long)(_currentTime / TickRate);
-            }
         }
     }
 
-    private object locker = new();
+    private static object locker = new();
     public void Tick(object? state) => Increment();
     public void Increment()
     {
         lock (locker)
-        {
             _currentTime++;
-        }
     }
 
     public bool SetTime(float time)

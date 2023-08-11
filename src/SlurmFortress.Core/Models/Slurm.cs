@@ -9,7 +9,7 @@ public class QueenSlurm : Slurm
 {
     public int SpawnRate { get; set; } = 1;
 
-    public void Produce()
+    public void Spawn()
     {
         Children.Add(new());
     }
