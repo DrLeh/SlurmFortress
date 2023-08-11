@@ -9,7 +9,7 @@ public record TickState
 
 public class TickFeature : Feature<TickState>
 {
-    public override string GetName() => "TickFeature";
+    public override string GetName() => GetType().Name;
 
     protected override TickState GetInitialState()
     {

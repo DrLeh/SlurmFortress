@@ -22,16 +22,24 @@ public class GameComponent : FluxorComponent
 
 
 
-    protected override Task OnAfterRenderAsync(bool firstRender)
-    {
-        if (firstRender)
-            return base.OnAfterRenderAsync(firstRender);
+    //protected override Task OnAfterRenderAsync(bool firstRender)
+    //{
+    //    if (firstRender)
+    //        return base.OnAfterRenderAsync(firstRender);
 
-        Logger.LogInformation($"Tick #: {TickState.Value.Ticks}");
+    //    TickState.StateChanged += (o, t) =>
+    //    {
+    //        StateHasChanged();
+    //    };
+    //    return base.OnAfterRenderAsync(firstRender);
+    //}
+
+    protected override Task OnInitializedAsync()
+    {
         TickState.StateChanged += (o, t) =>
         {
             StateHasChanged();
         };
-        return base.OnAfterRenderAsync(firstRender);
+        return base.OnInitializedAsync();
     }
 }
